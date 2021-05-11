@@ -20,7 +20,7 @@ Step 2: Enter your email address.
 Enter the email address below to send the contents of the form to.  You can enter more than one email address separated by commas, like so: $my_email = "info@example.com"; or $my_email = "bob@example.com,sales@example.co.uk,jane@example.com";
 */
 
-$my_email = "admin@rwbaker.com";
+$my_email = "reachryanmui@gmail.com";
 
 /*
 Optional.  Enter a From: email address.  By default, the email you get from the script will show the visitor's email address as the From: address.  In most cases this is desirable.  On the majority of setups this won't be a problem but a minority of hosts insist that the From: address must be from a domain on the server.  
