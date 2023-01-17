@@ -262,7 +262,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/banner-bg.jpg") center no-repeat;
+  background: url("../img/banner-developer.png") center no-repeat;
   background-size: cover;
   position: relative;
 }
@@ -497,6 +497,10 @@ section {
   background-color: #0563bb;
 }
 
+.skills-icon {
+  height: 200px;
+}
+
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
@@ -728,6 +732,7 @@ section {
 .portfolio-details .portfolio-details-slider .swiper-pagination {
   margin-top: 20px;
   position: relative;
+  
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
@@ -1112,6 +1117,29 @@ section {
 .contact .php-email-form button[type="submit"]:hover {
   background: #0678e3;
 }
+
+
+#contact .background {
+  width: 100%;
+  height: 10vh;
+  background: url("../img/banner-bg.jpg"), center no-repeat;
+  opacity: 40%;
+  background-size: cover;
+  position: relative;
+  right: 0px;
+  top: 0px;
+  padding-bottom: 56.25%;
+}
+
+/* #contact .background :before {
+  content: "";
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+} */
 
 @-webkit-keyframes animate-loading {
   0% {
