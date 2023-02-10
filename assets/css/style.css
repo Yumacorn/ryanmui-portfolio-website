@@ -139,12 +139,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (min-width: 992px) {
-  #main {
-    margin-left: 100px;
-  }
-}
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -320,16 +314,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #0563bb;
 }
 
+#hero .container {
+  position: relative;
+  top: 15vh;
+}
+
 @media (max-width: 992px) {
   #hero {
-    text-align: center;
+    text-align: start;
+    background-position: 25% center;
   }
+  #hero .container {
+    position: relative;
+    top: 15vh;
+  }
+
   #hero h1 {
     font-size: 32px;
     line-height: 36px;
   }
   #hero p {
-    margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -387,6 +391,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  background-color: #45505b21;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -497,9 +505,37 @@ section {
   background-color: #0563bb;
 }
 
-.skills-icon {
-  height: 200px;
+.skills .row {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
+
+@media (max-width: 992px) {
+  .skills-icon {
+    height: 130px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+  }
+
+  @media (min-width: 576px) {
+    .skills-icon {
+      height: 150px;
+      padding-top: 15px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .skills-icon {
+      height: 170px;
+      padding-top: 15px;
+    }
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Resume
@@ -997,9 +1033,12 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background-color: #45505b21;
+}
+
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 
 .contact .info i {
@@ -1123,7 +1162,7 @@ section {
   width: 100%;
   height: 10vh;
   background: url("../img/banner-bg.jpg"), center no-repeat;
-  opacity: 40%;
+  opacity: 80%;
   background-size: cover;
   position: relative;
   right: 0px;
@@ -1163,8 +1202,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
-  color: #45505b;
+  background: #000000;
+  color: #fcfdff;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1184,6 +1223,10 @@ section {
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
+}
+
+#footer a {
+  font-weight: 900;
 }
 
 #footer .social-links {
