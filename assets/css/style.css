@@ -139,11 +139,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   #main {
     margin-left: 100px;
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -387,6 +387,10 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  background-color: #45505b21;
+}
+
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
@@ -997,9 +1001,12 @@ section {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
+.contact {
+  background-color: #45505b21;
+}
+
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 
 .contact .info i {
@@ -1123,7 +1130,7 @@ section {
   width: 100%;
   height: 10vh;
   background: url("../img/banner-bg.jpg"), center no-repeat;
-  opacity: 40%;
+  opacity: 80%;
   background-size: cover;
   position: relative;
   right: 0px;
@@ -1163,8 +1170,8 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #f7f8f9;
-  color: #45505b;
+  background: #000000;
+  color: #fcfdff;
   font-size: 14px;
   text-align: center;
   padding: 30px 0;
@@ -1184,6 +1191,10 @@ section {
   font-style: italic;
   padding: 0;
   margin: 0 0 40px 0;
+}
+
+#footer a {
+  font-weight: 900;
 }
 
 #footer .social-links {
