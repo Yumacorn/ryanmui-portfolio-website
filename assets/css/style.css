@@ -139,12 +139,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-/* @media (min-width: 992px) {
-  #main {
-    margin-left: 100px;
-  }
-} */
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -320,16 +314,26 @@ h1, h2, h3, h4, h5, h6 {
   color: #0563bb;
 }
 
+#hero .container {
+  position: relative;
+  top: 15vh;
+}
+
 @media (max-width: 992px) {
   #hero {
-    text-align: center;
+    text-align: start;
+    background-position: 25% center;
   }
+  #hero .container {
+    position: relative;
+    top: 15vh;
+  }
+
   #hero h1 {
     font-size: 32px;
     line-height: 36px;
   }
   #hero p {
-    margin-top: 10px;
     font-size: 20px;
     line-height: 24px;
   }
@@ -501,9 +505,37 @@ section {
   background-color: #0563bb;
 }
 
-.skills-icon {
-  height: 200px;
+.skills .row {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
+
+@media (max-width: 992px) {
+  .skills-icon {
+    height: 130px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+  }
+
+  @media (min-width: 576px) {
+    .skills-icon {
+      height: 150px;
+      padding-top: 15px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .skills-icon {
+      height: 170px;
+      padding-top: 15px;
+    }
+  }
+}
+
 
 /*--------------------------------------------------------------
 # Resume
